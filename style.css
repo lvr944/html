@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #130b20;
+    color: white;
+    min-height: 100vh;
+    padding: 30px 20px;
+
+    background-image:
+        radial-gradient(circle at 10% 10%, #b00dd1, transparent 35%),
+        radial-gradient(circle at 90% 90%, #31104e, transparent 35%);
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(45px, 8vw, 85px);
+    background: linear-gradient(90deg, #ffb36b, #ff4fa3, #c58aff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 40px #ff4fa355;
+}
+
+/* PRESENTATION */
+
+h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #ffb36b;
+    margin: 25px 0 35px;
+}
+
+/* TITRES */
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #ff80bd;
+    margin: 25px auto 15px;
+    max-width: 800px;
+}
+
+/* LISTES */
+
+ul, ol {
+    max-width: 800px;
+    margin: auto;
+    padding: 25px 45px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 40px #00000044;
+}
+
+/* ELEMENTS */
+
+li {
+    padding: 12px 10px;
+    color: #eee2f5;
+    border-bottom: 1px solid #ffffff15;
+    transition: 0.3s;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    color: #ffb36b;
+    padding-left: 20px;
+}
+
+li::marker {
+    color: #ff80bd;
+}
+
+/* FOOTER / FIN DE PAGE */
+
+body::after {
+    content: "✦ LA GOURMANDISE À L'ÉTAT PUR ✦";
+    display: block;
+    text-align: center;
+    margin: 50px 0 20px;
+    color: #b78acb;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    ul, ol {
+        padding: 20px 35px;
+    }
+}
