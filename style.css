@@ -122,3 +122,31 @@ body::after {
         padding: 20px 35px;
     }
 }
+
+.bouton {
+    background-color: rgb(149, 0, 255);       /* Couleur du fond */
+    color: white;                 /* Couleur du texte */
+    padding: 10px 20px;            /* Taille intérieure */
+    border-radius: 10px;          /* Arrondir les coins */
+    text-decoration: none;        /* Enlever le soulignement */
+    font-size: 18px;              /* Taille du texte */
+    font-weight: bold;            /* Texte en gras */
+    border: 2px solid black;      /* Bordure */
+    display: inline-block;
+   margin:  auto;
+margin-top: 5px;
+   width: 500px;
+   height: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+
+.img
+{
+     display: block;
+     margin: auto;
+}
